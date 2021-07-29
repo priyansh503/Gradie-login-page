@@ -1,0 +1,43 @@
+@import "./colors";
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  background-color: inherit;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: $black;
+}
+
+@mixin flex($align: center, $justify: space-between, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin grid($columns: 1fr, $gap: 10px) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-gap: $gap;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+}

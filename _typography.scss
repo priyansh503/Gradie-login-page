@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import "./colors";
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  color: $black;
+  font-weight: 700;
+
+  @media only screen and (max-width: 550px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 340px) {
+    font-size: 20px;
+  }
+}
+
+
+a,
+span,
+button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+
+  @media only screen and (max-width: 340px) {
+    font-size: 13px;
+  }
+}
+
+span {
+  display: inline-block;
+  font-size: 15px;
+  color: $dark-gray;
+
+  @media only screen and (max-width: 340px) {
+    line-height: 1.4;
+    font-size: 12px;
+  }
+}
